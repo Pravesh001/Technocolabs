@@ -20,7 +20,7 @@ def predict():
 
     output = str(prediction[0])
 
-    return render_template('index.html', prediction_text=output)
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
