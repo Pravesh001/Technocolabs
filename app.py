@@ -18,7 +18,7 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
 
-    output = str(prediction)
+    output = prediction[0]
 
     return render_template('index.html', prediction_text='Spotify skip should be $ {}'.format(output))
 
