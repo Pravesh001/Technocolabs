@@ -26,7 +26,7 @@ df1 = df.merge(df_ft, how='left', left_on='track_id_clean', right_on='track_id')
 df1.drop('track_id_clean',inplace=True,axis=1)
 
 
-X = df1[ [ 'session_position', 'session_length', 'no_pause_before_play','long_pause_before_play','hist_user_behavior_is_shuffle','premium', 'acousticness','liveness','acoustic_vector_6']]
+X = df1[ [ 'session_position', 'session_length', 'no_pause_before_play','acousticness','liveness','acoustic_vector_6']]
 
 
 y = df1[['not_skipped']]
