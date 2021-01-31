@@ -1,6 +1,9 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
+import pandas
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
