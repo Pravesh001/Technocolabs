@@ -16,14 +16,14 @@
 	<h1>Predict Spotify Skips</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="" placeholder="session_position" required="required" />
-		<input type="text" name="" placeholder="session_length" required="required" />
-		<input type="text" name="" placeholder="no_pause_before_play" required="required" />
-		<input type="text" name="" placeholder="long_pause_before_play" required="required" />
-		<input type="text" name="" placeholder="acousticness" required="required" />
-		<input type="text" name="" placeholder="liveness" required="required" />
-		<input type="text" name="" placeholder="acoustic_vector_6" required="required" />
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="session_p" placeholder="session_position" required="required" />
+		<input type="text" name="session_l" placeholder="session_length" required="required" />
+		<input type="text" name="no_pause" placeholder="no_pause_before_play" required="required" />
+		<input type="text" name="long_pause" placeholder="long_pause_before_play" required="required" />
+		<input type="text" name="acoustic" placeholder="acousticness" required="required" />
+		<input type="text" name="live" placeholder="liveness" required="required" />
+		<input type="text" name="acousticv6" placeholder="acoustic_vector_6" required="required" />
 		
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
